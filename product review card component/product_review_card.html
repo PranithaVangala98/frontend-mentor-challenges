@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: hsl(30, 38%, 92%);
+        padding-left: 300px;
+        padding-top: 110px;
+    }
+
+    img {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        float: left;
+    }
+
+    .right-side {
+        background-color: white;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 320px;
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .para {
+        color: hsl(212, 21%, 14%);
+        font-family: 'Outfit', Fraunces;
+        font-weight: 700;
+    }
+
+    .green {
+        color: hsl(158, 36%, 37%);
+        padding: 15px;
+        font-family: 'Outfit', Montserrat;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .black {
+        color: hsl(212, 21%, 14%);
+        padding: 15px;
+    }
+
+    .add-cart {
+        color: white;
+        background-color: hsl(158, 36%, 37%);
+        border-radius: 5px;
+        text-align: center;
+        padding: 15px 32px;
+        font-family: 'Outfit', 'Montserrat';
+        font-weight: 700;
+        width: 250px;
+    }
+
+    .outer {
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="outer">
+        <div class="left-side">
+            <img src="./images/image-product-desktop.jpg" width="350" height="500">
+        </div>
+        <div class="right-side">
+            <p style="color:hsl(212, 21%, 14%);font-family: 'Outfit', Montserrat;font-weight: 700; padding-top: 20px;">
+                P E R F U M E</p>
+            <h1> Gabrielle Essence Eau De Parfum</h1>
+            <p class="para"> A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                Perfumer-Creator for the House of CHANEL.</p>
+            <p>
+                <span class="green">$149.99</span>
+                <span style=" color: hsl(212, 21%, 14%);"> <del>$169.99</del></span>
+            </p>
+            <button class="add-cart"> <img style="padding-right:10px" src="./images/icon-cart.svg">Add to
+                Cart</button>
+        </div>
+    </div>
+</body>
+
+</html>
