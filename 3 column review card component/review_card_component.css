@@ -1,0 +1,132 @@
+:root {
+    --ff-lex: 'Lexend Deca', sans-serif;
+    --ff-big: 'Big Shoulders Display';
+
+    --font-normal: 400;
+    --font-bold: 700;
+
+    --font-size: 15px;
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*(paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /*(background, headings, buttons)*/
+}
+
+body {
+    background-color: var(--Very-light-gray);
+    line-height: 25px;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--Very-light-gray);
+    padding-left: 300px;
+    padding-top: 150px;
+}
+
+h1 {
+
+    text-transform: uppercase;
+    font-family: var(--ff-big);
+    font-weight: var(--font-bold);
+
+}
+
+.sedan {
+    background-color: var(--Bright-orange);
+    width: 200px;
+    font-family: var(--ff-big);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 40px;
+
+}
+
+.about_sedan,
+.about_SUVS,
+.about_Luxury {
+    font-family: var(--ff-lex);
+    color: var(--Transparent-white);
+    font-size: 15px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.SUVs {
+    background-color: var(--Dark-cyan);
+    font-family: var(--ff-accent);
+    padding: 40px;
+    width: 200px;
+    font-family: var(--ff-big);
+}
+
+.Luxary {
+    background-color: var(--Very-dark-cyan);
+    font-family: var(--ff-accent);
+    padding: 40px;
+    width: 200px;
+    font-family: var(--ff-big);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+
+}
+
+.learn_more_sedan {
+    background-color: var(--Very-light-gray);
+    color: var(--Bright-orange);
+    font-family: var(--ff-lex);
+    border-radius: 25px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.learn_more_SUVs {
+    background-color: var(--Very-light-gray);
+    color: var(--Dark-cyan);
+    font-family: var(--ff-lex);
+    border-radius: 25px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.learn_more_Luxary {
+    background-color: var(--Very-light-gray);
+    color: var(--Very-dark-cyan);
+    font-family: var(--ff-lex);
+    border-radius: 25px;
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+@media (min-width:1024px) {
+    .column {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sedan {
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .Luxary {
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+    }
+}
